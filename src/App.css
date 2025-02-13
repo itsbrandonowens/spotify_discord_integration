@@ -1,0 +1,162 @@
+.app-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+
+.discord_split {
+  background: rgb(84, 103, 168);
+  background: linear-gradient(0deg, rgba(84, 103, 168, 1) 0%, rgba(114, 137, 218, 1) 50%, rgba(153, 172, 241, 1) 100%);
+  color: white;
+  border-right:white solid 5px;
+}
+
+.spotify_split {
+  background: rgb(22, 133, 61);
+  background: linear-gradient(0deg, rgba(22, 133, 61, 1) 0%, rgba(29, 185, 84, 1) 50%, rgba(58, 215, 113, 1) 100%);
+  color: white;
+ 
+}
+
+.login_button {
+  filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  width: 60%;
+  height: 5vw;
+  margin-left: 20%;
+  margin-top: 40%;
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: #eeeeee;
+  border: none;
+  padding: 1% 2%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.spotify_record_needle {
+  position: absolute;
+  width: 15%;
+  margin-top: 9%;
+  right: 5%;
+  transform: rotate(180deg);
+  z-index: 2;
+  filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+}
+
+.spotify_song_image {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 12%;
+  filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+  border: white solid 2px;
+  border-radius: 100%;
+  animation: rotating 15s linear infinite;
+}
+
+.spotify_song_image_paused {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+  filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+  border: white solid 2px;
+  border-radius: 100%;
+  animation: rotating 15s linear infinite;
+  animation-play-state: paused;
+}
+
+.spotify_song_title {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+
+  filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+  color: #eeeeee;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+}
+
+.spotify_song_artist {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -1.5%;
+
+  filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+  color: #d4d4d4;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9vw;
+}
+
+.song_timer {
+  width:80%;
+  margin-left:10%;
+  margin-top:2%;
+}
+
+.song_timer_label_container {
+  position:absolute;
+  margin-left:5.2%;
+}
+.song_timer_label {
+  filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+  color: #eeeeee;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8vw;
+}
+
+.spotify_button_container {
+  width: 40%;
+  margin-left: 33%;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.spotify_button {
+  filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: #eeeeee;
+  border: none;
+  padding: 1% 2%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.no_song_playing_message{
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top:40%;
+
+  filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+  color: #eeeeee;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+}
+
+/* Animations */
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+
+}
